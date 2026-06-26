@@ -3,281 +3,935 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nandakishor Kalagarla | AI Engineer Portfolio</title>
+    
+    <!-- SEO Optimization -->
+    <title>Kalagarla Akhila | AI & Data Science Graduate & Web Developer</title>
+    <meta name="description" content="Portfolio of Kalagarla Akhila, a B.Tech graduate specializing in Artificial Intelligence and Data Science. Exploring Python development, Machine Learning, and Web Engineering.">
+    <meta name="keywords" content="Kalagarla Akhila, Akhila Kalagarla, AI Graduate, Data Science, Machine Learning, Web Developer, Python Developer, Portfolio">
+    <meta name="author" content="Kalagarla Akhila">
 
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">K.Nandakishor</div>
+    <!-- SECTION 1: Page Preloader -->
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-content">
+            <div class="preloader-logo">KA<span>.</span></div>
+            <div class="preloader-line"></div>
+        </div>
+    </div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#training">Training</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- SECTION 1 (cont): Header / Sticky Navbar -->
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <a href="#home" class="logo-container" aria-label="Home page">
+                        <span class="logo-text">KA<span class="logo-dot"></span></span>
+                    </a>
+                    <a href="mailto:akhilakalagarla@gmail.com" class="nav-email" title="Send Email">
+                        <i class="fa-regular fa-envelope"></i>
+                        akhilakalagarla@gmail.com
+                    </a>
+                </div>
+
+                <div class="nav-right">
+                    <!-- Desktop Navigation Menu -->
+                    <ul class="nav-menu-desktop" role="menubar">
+                        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+                        <li role="none"><a role="menuitem" href="#about">About</a></li>
+                        <li role="none"><a role="menuitem" href="#services">Services</a></li>
+                        <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+                        <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+                        <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+                        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Hamburger Menu Toggle Button -->
+                    <button class="menu-toggle" aria-label="Toggle navigation drawer" aria-expanded="false" aria-controls="mobile-drawer">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="home-content">
-            <p class="intro-text">Hello, I'm</p>
-
-            <h1>Nandakishor Kalagarla</h1>
-
-            <h2>Final Year B.Tech AIML Student | Aspiring AI Developer</h2>
-
-            <p class="home-description">
-                I am passionate about Python, Machine Learning, Generative AI, RAG,
-                LLMs, Gemini API, SQL, and building AI-powered applications like
-                chatbots, document Q&A systems, resume analyzers, and smart assistants.
-            </p>
-
-            <div class="home-buttons">
-                <a href="#projects" class="btn primary-btn">View Projects</a>
-                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+    <!-- Mobile Navigation Drawer Overlay & Content -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+        <ul class="drawer-links" role="menu">
+            <li role="none"><a role="menuitem" href="#home">Home</a></li>
+            <li role="none"><a role="menuitem" href="#about">About Me</a></li>
+            <li role="none"><a role="menuitem" href="#services">Services</a></li>
+            <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+            <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+            <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+            <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+            <p>Let's connect & build solutions</p>
+            <div class="drawer-socials">
+                <a href="mailto:akhilakalagarla@gmail.com" aria-label="Email" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/akhila-kalagarla-369155253" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/akhila-kalagarla" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
-    </section>
+    </aside>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
+    <!-- SECTION 2: Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-left">
+                        <div class="status-badge">
+                            <span class="dot"></span>
+                            Open to opportunities
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span>Hi, I’m </span><span class="orange-highlight">Kalagarla Akhila</span>!
+                            <span>I’m an </span>
+                            <img src="profile_avatar.png" alt="Kalagarla Akhila avatar" class="hero-profile-inline">
+                            <span>AI & Data Science Graduate </span>
+                            <span>Building smart web and AI solutions.</span>
+                        </h1>
+                        
+                        <p class="hero-subtitle">
+                            Recently graduated B.Tech student specializing in Artificial Intelligence and Data Science, with skills in web development, Python, machine learning, and problem-solving. Passionate about building innovative real-world solutions.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                        
+                        <div class="hero-small-info">
+                            <i class="fa-solid fa-sparkles"></i>
+                            <span>Explore my projects, skills, and achievements — let’s build something impactful together.</span>
+                        </div>
+                    </div>
 
-        <div class="about-container">
-            <p>
-                I am a Final Year B.Tech student in Artificial Intelligence and Machine Learning
-                at Kakinada Institute of Engineering and Technology. I am focused on becoming
-                an AI Developer / Junior AI Engineer.
-            </p>
-
-            <p>
-                I am learning Python, SQL, Machine Learning, Generative AI, RAG, LLMs,
-                and AI application development. My goal is to build real-world
-                AI solutions that solve practical problems.
-            </p>
-
-            <div class="about-cards">
-                <div class="about-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>AI Development</h3>
-                    <p>Building AI-powered applications using modern AI tools and APIs.</p>
-                </div>
-
-                <div class="about-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Machine Learning</h3>
-                    <p>Learning ML fundamentals, preprocessing, and model evaluation.</p>
-                </div>
-
-                <div class="about-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>AI Chatbots</h3>
-                    <p>Creating chatbot systems using RAG, LLMs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section light-section">
-        <h2 class="section-title">Technical Skills</h2>
-
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-python"></i>
-                <h3>Python</h3>
-                <p>Programming, problem-solving, automation, and AI application development.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-brain"></i>
-                <h3>Machine Learning</h3>
-                <p>Supervised learning, data preprocessing, feature understanding, and evaluation.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-robot"></i>
-                <h3>Generative AI</h3>
-                <p>Working with LLMs, prompts, Gemini API, and AI-powered applications.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-comments"></i>
-                <h3>Chatbots</h3>
-                <p>Building smart assistants and policy-support chatbot systems.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>HTML & CSS</h3>
-                <p>Creating responsive and modern portfolio websites.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-users"></i>
-                <h3>Soft Skills</h3>
-                <p>Communication, teamwork, time management, and problem solving.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-building-user"></i>
-                </div>
-
-                <h3>Smart Navigator for Guidelines and Policy Support</h3>
-
-                <p>
-                    An AI-based chatbot system that helps employees access company policies
-                    and guidelines using document-based question answering.
-                </p>
-
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>RAG</span>
-                    <span>Gemini API</span>
-                    <span>AI Chatbot</span>
+                    <div class="hero-right" aria-hidden="true">
+                        <div class="dotted-grid"></div>
+                        <div class="glow-circle"></div>
+                        <!-- Floating sparkle symbols -->
+                        <div class="sparkle sparkle-1"><i class="fa-solid fa-sparkles"></i></div>
+                        <div class="sparkle sparkle-2"><i class="fa-solid fa-star"></i></div>
+                        <div class="sparkle sparkle-3"><i class="fa-solid fa-code"></i></div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- SECTION 3: Dashboard Cards Section -->
+        <section id="dashboard" class="dashboard-section" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="dashboard-grid reveal-up">
+                    
+                    <!-- Card 1: Experience Timeline -->
+                    <div class="dashboard-card">
+                        <div class="dashboard-card-header">
+                            <h2 class="dashboard-card-title">
+                                <i class="fa-solid fa-briefcase"></i> Experience
+                            </h2>
+                            <span class="chip chip-accent">Timeline</span>
+                        </div>
+                        <ul class="timeline-mini">
+                            <li class="timeline-mini-item">
+                                <span class="timeline-mini-dot"></span>
+                                <h3 class="timeline-mini-title">Machine Learning Intern</h3>
+                                <div class="timeline-mini-meta">APSSDC - Edunet Foundation | Jun 2024 - Jul 2024</div>
+                                <p class="timeline-mini-desc">Developed an Employee Burnout Prediction model. Performed data preprocessing, cleaning, and visualizations with Python.</p>
+                            </li>
+                            <li class="timeline-mini-item">
+                                <span class="timeline-mini-dot"></span>
+                                <h3 class="timeline-mini-title">Mentor</h3>
+                                <div class="timeline-mini-meta">Global Coding Club | Mar 2024 - Mar 2026</div>
+                                <p class="timeline-mini-desc">Mentored students in Python, basic ML concepts, guided programming assignments and peer-learning challenges.</p>
+                            </li>
+                        </ul>
+                    </div>
 
-    <!-- Education Section -->
-    <section id="education" class="section light-section">
-        <h2 class="section-title">Education</h2>
+                    <!-- Card 2: Featured Project Carousel/Card -->
+                    <div class="dashboard-card">
+                        <div class="dashboard-card-header">
+                            <h2 class="dashboard-card-title">
+                                <i class="fa-solid fa-star"></i> Featured Project
+                            </h2>
+                            <a href="#projects" class="chip chip-accent" style="text-decoration:none;" aria-label="View all projects">Browse</a>
+                        </div>
+                        <div class="featured-project-container">
+                            <div class="featured-project-mockup" aria-label="Smart Griev illustration mockup"></div>
+                            <h3 class="featured-project-title">Smart Griev</h3>
+                            <p class="featured-project-desc">Web app for reporting environmental/civic issues with image upload, location tracking, and dashboards.</p>
+                            <div class="featured-project-tech">
+                                <span class="chip">HTML</span>
+                                <span class="chip">CSS</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">Dashboard</span>
+                            </div>
+                            <div class="chips-list-header">More Projects</div>
+                            <div class="other-chips">
+                                <span class="chip">Resume Shortlisting</span>
+                                <span class="chip">Skin Cancer Prediction</span>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="education-container">
-            <div class="education-card">
-                <h3>Bachelor of Technology - B.Tech</h3>
-                <h4>Computer Science and Engineering - AIML</h4>
-                <p>Kakinada Institute of Engineering and Technology</p>
-                <p>CGPA: 7.77 / 10</p>
-                <span>September 2023 - June 2027</span>
+                    <!-- Card 3: What I'm Learning / Tech Skills Summary -->
+                    <div class="dashboard-card">
+                        <div class="dashboard-card-header">
+                            <h2 class="dashboard-card-title">
+                                <i class="fa-solid fa-graduation-cap"></i> Core Strengths
+                            </h2>
+                            <span class="chip chip-accent">Skills</span>
+                        </div>
+                        <div class="dashboard-skills-list">
+                            
+                            <div class="skill-progress-bar-container">
+                                <div class="skill-progress-info">
+                                    <span class="skill-progress-name"><i class="fa-brands fa-python"></i> Python</span>
+                                    <span class="skill-progress-percentage">Advanced</span>
+                                </div>
+                                <div class="progress-track" aria-label="Python progress bar 90%">
+                                    <div class="progress-fill" data-percent="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-bar-container">
+                                <div class="skill-progress-info">
+                                    <span class="skill-progress-name"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                                    <span class="skill-progress-percentage">Intermediate</span>
+                                </div>
+                                <div class="progress-track" aria-label="Machine Learning progress bar 75%">
+                                    <div class="progress-fill" data-percent="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-bar-container">
+                                <div class="skill-progress-info">
+                                    <span class="skill-progress-name"><i class="fa-solid fa-code"></i> Web Development</span>
+                                    <span class="skill-progress-percentage">Intermediate</span>
+                                </div>
+                                <div class="progress-track" aria-label="Web Development progress bar 80%">
+                                    <div class="progress-fill" data-percent="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-bar-container">
+                                <div class="skill-progress-info">
+                                    <span class="skill-progress-name"><i class="fa-solid fa-chart-simple"></i> Data Science</span>
+                                    <span class="skill-progress-percentage">Intermediate</span>
+                                </div>
+                                <div class="progress-track" aria-label="Data Science progress bar 75%">
+                                    <div class="progress-fill" data-percent="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-bar-container">
+                                <div class="skill-progress-info">
+                                    <span class="skill-progress-name"><i class="fa-solid fa-network-wired"></i> AI & ML</span>
+                                    <span class="skill-progress-percentage">Intermediate</span>
+                                </div>
+                                <div class="progress-track" aria-label="AI & ML progress bar 75%">
+                                    <div class="progress-fill" data-percent="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-bar-container">
+                                <div class="skill-progress-info">
+                                    <span class="skill-progress-name"><i class="fa-solid fa-cubes"></i> Flask & MongoDB</span>
+                                    <span class="skill-progress-percentage">Intermediate</span>
+                                </div>
+                                <div class="progress-track" aria-label="Flask and MongoDB progress bar 70%">
+                                    <div class="progress-fill" data-percent="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-bar-container">
+                                <div class="skill-progress-info">
+                                    <span class="skill-progress-name"><i class="fa-solid fa-gears"></i> LLM Integration</span>
+                                    <span class="skill-progress-percentage">Beginner-Int</span>
+                                </div>
+                                <div class="progress-track" aria-label="LLM Integration progress bar 60%">
+                                    <div class="progress-fill" data-percent="60"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <div class="education-card">
-                <h3>Intermediate</h3>
-                <h4>Don Bosco Junior College</h4>
-                <p>Percentage: 58.9%</p>
-                <span>2021 - 2023</span>
+        <!-- SECTION 4: About Me Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid reveal-up">
+                    <div class="about-left">
+                        <div class="section-header" style="margin-bottom: 30px;">
+                            <span class="section-subtitle">Who I Am</span>
+                            <h2 class="section-title">About Me</h2>
+                        </div>
+                        <div class="about-left-text">
+                            <p>
+                                I am a passionate B.Tech graduate in Artificial Intelligence and Data Science from Kakinada Institute of Engineering and Technology for Women (KIETW), Korangi, Kakinada.
+                            </p>
+                            <p>
+                                I am deeply interested in Python programming, modern web development, machine learning methodologies, data analysis, exploratory computing, basic NLP workflows, and LLM orchestration. My goal is to craft scalable, intelligent software systems to address real-world business challenges.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-highlights-grid">
+                            
+                            <div class="about-highlight-card">
+                                <div class="about-highlight-icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <h3 class="about-highlight-title">AI & Data Science Graduate</h3>
+                            </div>
+
+                            <div class="about-highlight-card">
+                                <div class="about-highlight-icon">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <h3 class="about-highlight-title">Web Developer</h3>
+                            </div>
+
+                            <div class="about-highlight-card">
+                                <div class="about-highlight-icon">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <h3 class="about-highlight-title">ML Enthusiast</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="education-card">
-                <h3>10th Class</h3>
-                <h4>St. Mary's E.M. School</h4>
-                <p>Percentage: 95.1%</p>
-                <span>2020 - 2021</span>
+        <!-- SECTION 5: Services / What I Do Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Offerings</span>
+                    <h2 class="section-title">What I Do</h2>
+                </div>
+
+                <div class="services-grid reveal-up">
+                    <!-- Service 1: Web Development -->
+                    <div class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-desc">Building interactive, fluid, and responsive web applications utilizing HTML, CSS, JavaScript, and React framework fundamentals.</p>
+                    </div>
+
+                    <!-- Service 2: Machine Learning -->
+                    <div class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="service-title">Machine Learning</h3>
+                        <p class="service-desc">Engaged in data cleaning, exploratory preprocessing, training algorithms, model performance evaluation, and predictive tuning.</p>
+                    </div>
+
+                    <!-- Service 3: Mentorship -->
+                    <div class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3 class="service-title">Mentorship</h3>
+                        <p class="service-desc">Providing mentorship in Python programming paradigms and basic machine learning architectures to juniors and peers.</p>
+                    </div>
+
+                    <!-- Service 4: Data Analysis -->
+                    <div class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="service-title">Data Analysis</h3>
+                        <p class="service-desc">Performing Exploratory Data Analysis (EDA), graphical visualization, outliers identification, and validation reviews using libraries.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Training Section -->
-    <section id="training" class="section">
-        <h2 class="section-title">Internship / Training</h2>
+        <!-- SECTION 6: Technical Skills Section -->
+        <section id="skills" class="skills-details">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Expertise Map</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
 
-        <div class="education-container">
-            <div class="education-card">
-                <h3>Foundations of Modern Machine Learning</h3>
-                <h4>IIIT Hyderabad / iHub Data</h4>
+                <div class="skills-details-grid reveal-up">
+                    <!-- Python -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-brands fa-python skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">Python</h3>
+                        </div>
+                        <p class="skill-details-desc">OOP programming, data structures, data preprocessing, machine learning algorithms, and backend integration.</p>
+                    </div>
 
-                <p>
-                    Completed FMML training focused on machine learning fundamentals,
-                    data interpretation, model-building concepts, supervised learning,
-                    data preprocessing, and basic model evaluation.
-                </p>
+                    <!-- Frontend -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-solid fa-laptop-code skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">Frontend</h3>
+                        </div>
+                        <p class="skill-details-desc">Structuring accessible markup with HTML5, style layouts with CSS3, logic scripting in JavaScript (ES6+), and React.js hooks.</p>
+                    </div>
 
-                <span>27 July 2024 - 18 April 2025</span>
+                    <!-- Backend -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-solid fa-server skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">Backend</h3>
+                        </div>
+                        <p class="skill-details-desc">Flask framework development, API endpoint structure, backend routing logic, and HTTP response handling.</p>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-solid fa-database skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">Database</h3>
+                        </div>
+                        <p class="skill-details-desc">Data schema design in MongoDB, JSON-style document storage, collections querying, and database configurations.</p>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-solid fa-chart-pie skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">Data Science</h3>
+                        </div>
+                        <p class="skill-details-desc">Exploratory Data Analysis, Pandas dataframes manipulation, NumPy computations, and matplotlib/seaborn plotting.</p>
+                    </div>
+
+                    <!-- AI & ML -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-solid fa-microchip skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">AI & ML</h3>
+                        </div>
+                        <p class="skill-details-desc">Supervised classification, regression, ANN neural network modeling, basic NLP parsing, and LLM text generation APIs.</p>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-solid fa-screwdriver-wrench skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">Tools</h3>
+                        </div>
+                        <p class="skill-details-desc">VS Code, Google Colab notebooks, Git version tracking, GitHub project management, and Jupyter Environments.</p>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-details-card">
+                        <div class="skill-details-header">
+                            <i class="fa-solid fa-comments-dollar skill-details-icon" aria-hidden="true"></i>
+                            <h3 class="skill-details-title">Soft Skills</h3>
+                        </div>
+                        <p class="skill-details-desc">Logical problem solving, analytical thinking, clear communication, collaborative teamwork, and quick adaptability.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section light-section">
-        <h2 class="section-title">Certifications</h2>
+        <!-- SECTION 7: Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Showcase</span>
+                    <h2 class="section-title">My Projects</h2>
+                </div>
 
-        <div class="certification-container">
-            <div class="certification-card">
-                <i class="fas fa-certificate"></i>
-                <h3>Basics of Python</h3>
-                <p>Infosys Springboard</p>
+                <div class="projects-grid reveal-up">
+                    <!-- Project 1: Smart Griev -->
+                    <div class="project-card-full">
+                        <div class="project-card-content">
+                            <div class="project-card-header">
+                                <div class="project-card-icon"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i></div>
+                                <span class="chip chip-accent">Web Platform</span>
+                            </div>
+                            <h3 class="project-card-title">Smart Griev</h3>
+                            <p class="project-card-desc">Developed an innovative web application aimed at reporting civic and environmental issues. Integrates location tracking, camera capture uploads, and responsive administrative dashboards for complaint tracking.</p>
+                        </div>
+                        <div class="project-card-footer">
+                            <div class="featured-project-tech">
+                                <span class="chip">HTML</span>
+                                <span class="chip">CSS</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Resume Shortlisting -->
+                    <div class="project-card-full">
+                        <div class="project-card-content">
+                            <div class="project-card-header">
+                                <div class="project-card-icon"><i class="fa-solid fa-id-card-clip" aria-hidden="true"></i></div>
+                                <span class="chip chip-accent">AI System</span>
+                            </div>
+                            <h3 class="project-card-title">Resume Shortlisting System</h3>
+                            <p class="project-card-desc">Built an AI-driven resume classification algorithm utilizing Artificial Neural Networks (ANN) in Python to match candidate applications against job description queries and predict shortlisting statuses.</p>
+                        </div>
+                        <div class="project-card-footer">
+                            <div class="featured-project-tech">
+                                <span class="chip">Python</span>
+                                <span class="chip">ANN</span>
+                                <span class="chip">TensorFlow</span>
+                                <span class="chip">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Skin Cancer Prediction -->
+                    <div class="project-card-full">
+                        <div class="project-card-content">
+                            <div class="project-card-header">
+                                <div class="project-card-icon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></div>
+                                <span class="chip chip-accent">Hackathon Winner</span>
+                            </div>
+                            <h3 class="project-card-title">Skin Cancer Prediction</h3>
+                            <p class="project-card-desc">Collaborated on a computer vision and machine learning model to classify skin lesions for early detection. Won 2nd Prize in a competitive team-based Hackathon event.</p>
+                        </div>
+                        <div class="project-card-footer">
+                            <div class="featured-project-tech">
+                                <span class="chip">Python</span>
+                                <span class="chip">Computer Vision</span>
+                                <span class="chip">Scikit-learn</span>
+                                <span class="chip">Hackathon</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
+        </section>
 
-            <div class="certification-card">
-                <i class="fas fa-certificate"></i>
-                <h3>Foundations of Modern Machine Learning</h3>
-                <p>IIIT Hyderabad / iHub Data</p>
+        <!-- SECTION 8: Internship Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Professional Path</span>
+                    <h2 class="section-title">Internship Experience</h2>
+                </div>
+
+                <div class="experience-list reveal-up">
+                    <div class="experience-card-full">
+                        <span class="experience-badge">Internship</span>
+                        <h3 class="experience-job-title">Machine Learning Intern</h3>
+                        <div class="experience-company">APSSDC - Edunet Foundation</div>
+                        <div class="experience-duration">
+                            <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                            <span>June 2024 - July 2024</span>
+                        </div>
+                        <p class="experience-desc">
+                            Developed a predictive Employee Burnout Prediction model. Spearheaded dataset pre-cleaning, feature alignment, and graphical distributions tracking utilizing Python libraries. Acquired intensive knowledge in evaluation algorithms, model fit tests, and training-validation procedures with Scikit-learn and Pandas.
+                        </p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="certification-card">
-                <i class="fas fa-certificate"></i>
-                <h3>DSA in Python</h3>
-                <p>SkillUp</p>
+        <!-- SECTION 9 & 10: Education & Activities Section -->
+        <section id="education-activities" class="edu-act">
+            <div class="container">
+                <div class="edu-act-grid">
+                    
+                    <!-- Education Column (Section 9) -->
+                    <div class="edu-act-column reveal-up">
+                        <div class="section-header" style="margin-bottom: 30px;">
+                            <span class="section-subtitle">Academic Credentials</span>
+                            <h2 class="section-title">Education</h2>
+                        </div>
+                        
+                        <div class="edu-act-card">
+                            <div class="edu-act-header">
+                                <div class="edu-act-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+                                <span class="edu-act-date">2022 - 2026</span>
+                            </div>
+                            <h3 class="edu-act-title">Bachelor of Technology (B.Tech)</h3>
+                            <h4 class="edu-act-subtitle">Artificial Intelligence & Data Science</h4>
+                            <p class="edu-act-location">Kakinada Institute of Engineering and Technology for Women, Korangi, Kakinada</p>
+                            <p class="edu-act-desc">Engaged in intensive coursework including Algorithms Analysis, Data Science pipelines, Python foundations, Databases, and AI system design.</p>
+                            <div class="edu-act-metric">Aggregate Score: 74%</div>
+                        </div>
+                    </div>
+
+                    <!-- Activities Column (Section 10) -->
+                    <div class="edu-act-column reveal-up">
+                        <div class="section-header" style="margin-bottom: 30px;">
+                            <span class="section-subtitle">Engagement & Coding</span>
+                            <h2 class="section-title">Activities</h2>
+                        </div>
+
+                        <div class="edu-act-card">
+                            <div class="edu-act-header">
+                                <div class="edu-act-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
+                                <span class="edu-act-date">2024 - 2026</span>
+                            </div>
+                            <h3 class="edu-act-title">Member & Mentor</h3>
+                            <h4 class="edu-act-subtitle">Global Coding Club (GCC)</h4>
+                            <p class="edu-act-location">Kakinada Institute of Engineering and Technology for Women</p>
+                            <p class="edu-act-desc">Mentored first and second-year juniors in foundational programming syntaxes and ML models. Hosted peer workshops, code debugging jams, and coordinated hackathons and team-building events.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <h2 class="section-title">Contact Me</h2>
+        <!-- SECTION 11: Certifications Section -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Verifications</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
 
-        <p class="contact-text">
-            I am open to AI Developer, Junior AI Engineer, and AI Internship opportunities
-            where I can contribute to real-world AI-powered projects.
-        </p>
+                <div class="certifications-grid reveal-up">
+                    <!-- Cert 1 -->
+                    <div class="certification-card-v2">
+                        <div class="certification-icon-v2"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+                        <div class="certification-info-v2">
+                            <h3 class="certification-title-v2">React</h3>
+                            <p class="certification-issuer-v2">HackerRank</p>
+                        </div>
+                    </div>
 
-        <div class="contact-container">
+                    <!-- Cert 2 -->
+                    <div class="certification-card-v2">
+                        <div class="certification-icon-v2"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+                        <div class="certification-info-v2">
+                            <h3 class="certification-title-v2">Frontend Developer</h3>
+                            <p class="certification-issuer-v2">Infosys Springboard</p>
+                        </div>
+                    </div>
 
-            <a href="mailto:kalagarlanandakishor@gmail.com" class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <p>kalagarlanandakishor@gmail.com</p>
-            </a>
+                    <!-- Cert 3 -->
+                    <div class="certification-card-v2">
+                        <div class="certification-icon-v2"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+                        <div class="certification-info-v2">
+                            <h3 class="certification-title-v2">Modern Machine Learning</h3>
+                            <p class="certification-issuer-v2">IIIT Hyderabad</p>
+                        </div>
+                    </div>
 
-            <a href="https://github.com/Nandakishor999" target="_blank" class="contact-card">
-                <i class="fab fa-github"></i>
-                <h3>GitHub</h3>
-                <p>View My Projects</p>
-            </a>
+                    <!-- Cert 4 -->
+                    <div class="certification-card-v2">
+                        <div class="certification-icon-v2"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+                        <div class="certification-info-v2">
+                            <h3 class="certification-title-v2">Python Foundations</h3>
+                            <p class="certification-issuer-v2">Simplilearn</p>
+                        </div>
+                    </div>
 
-            <a href="https://www.linkedin.com/in/nandakishor-kalagarla-a8b33b307/" target="_blank" class="contact-card">
-                <i class="fab fa-linkedin"></i>
-                <h3>LinkedIn</h3>
-                <p>Connect With Me</p>
-            </a>
+                    <!-- Cert 5 -->
+                    <div class="certification-card-v2">
+                        <div class="certification-icon-v2"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+                        <div class="certification-info-v2">
+                            <h3 class="certification-title-v2">Python Programming</h3>
+                            <p class="certification-issuer-v2">Scaler Academy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- SECTION 12: Achievements Section -->
+        <section id="achievements" class="achievements">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                </div>
 
-    <!-- Footer -->
+                <div class="achievements-grid reveal-up">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true"><i class="fa-solid fa-trophy"></i></div>
+                        <p class="achievement-text">Won 2nd Prize in a collegiate Hackathon for the Skin Cancer Prediction ML system.</p>
+                        <span class="achievement-badge">Hackathon Winner</span>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true"><i class="fa-solid fa-user-shield"></i></div>
+                        <p class="achievement-text">Selected as GCC core committee member for organizing technical programming hack-events.</p>
+                        <span class="achievement-badge">Global Coding Club</span>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true"><i class="fa-solid fa-award"></i></div>
+                        <p class="achievement-text">Secured top ranks twice in algorithmic Python programming tournaments conducted by Edyst.</p>
+                        <span class="achievement-badge">Edyst Contest Winner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 13: Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Let’s Connect</h2>
+                </div>
+
+                <div class="contact-layout reveal-up">
+                    <div class="contact-left">
+                        <p class="contact-desc">
+                            I am open to discussing new roles, internships, and research opportunities in web development, Python engineering, machine learning workflows, and data analyst roles. Feel free to contact me directly!
+                        </p>
+                        
+                        <div class="contact-details-list">
+                            
+                            <!-- Email -->
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
+                                <div class="contact-detail-info">
+                                    <span class="contact-detail-label">Email Me</span>
+                                    <a href="mailto:akhilakalagarla@gmail.com" class="contact-detail-value">akhilakalagarla@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                                <div class="contact-detail-info">
+                                    <span class="contact-detail-label">Phone</span>
+                                    <a href="tel:+919676455883" class="contact-detail-value">+91 9676455883</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                                <div class="contact-detail-info">
+                                    <span class="contact-detail-label">Location</span>
+                                    <span class="contact-detail-value" style="color: var(--text-secondary);">Kakinada, Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <div class="contact-buttons-grid">
+                            <a href="mailto:akhilakalagarla@gmail.com" class="contact-btn contact-btn-email" title="Email akhilakalagarla@gmail.com">
+                                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                                Email Me
+                            </a>
+                            <a href="https://www.linkedin.com/in/akhila-kalagarla-369155253" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-linkedin" title="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/akhila-kalagarla" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-github" title="GitHub Profile">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SECTION 14: Footer Section -->
     <footer>
-        <p>© 2026 Nandakishor Kalagarla | AI Engineer Portfolio</p>
+        <div class="container">
+            <p class="footer-text">© 2026 Kalagarla Akhila | AI & Data Science Portfolio</p>
+        </div>
     </footer>
 
+    <!-- GSAP & ScrollTrigger Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Custom Portfolio Scripts -->
+    <script>
+        // Ensure scripts execute after DOM is fully ready
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Preloader Overlay Fade-out
+            window.addEventListener('load', () => {
+                const preloader = document.getElementById('preloader');
+                gsap.to(preloader, {
+                    opacity: 0,
+                    duration: 0.6,
+                    ease: 'power2.out',
+                    onComplete: () => {
+                        preloader.style.display = 'none';
+                        triggerHeroAnimations();
+                    }
+                });
+            });
+
+            // Fallback: If page load event takes too long, hide preloader after 3 seconds
+            setTimeout(() => {
+                const preloader = document.getElementById('preloader');
+                if (preloader && preloader.style.display !== 'none') {
+                    gsap.to(preloader, {
+                        opacity: 0,
+                        duration: 0.5,
+                        ease: 'power2.out',
+                        onComplete: () => {
+                            preloader.style.display = 'none';
+                            triggerHeroAnimations();
+                        }
+                    });
+                }
+            }, 3000);
+
+            // 2. Mobile Menu Drawer Navigation Control
+            const toggleBtn = document.querySelector('.menu-toggle');
+            const drawer = document.querySelector('.mobile-drawer');
+            const overlay = document.querySelector('.drawer-overlay');
+            const drawerLinks = document.querySelectorAll('.mobile-drawer a');
+
+            function toggleDrawer() {
+                const isOpen = drawer.classList.contains('active');
+                toggleBtn.setAttribute('aria-expanded', !isOpen);
+                toggleBtn.classList.toggle('active');
+                drawer.classList.toggle('active');
+                overlay.classList.toggle('active');
+            }
+
+            toggleBtn.addEventListener('click', toggleDrawer);
+            overlay.addEventListener('click', toggleDrawer);
+            drawerLinks.forEach(link => {
+                link.addEventListener('click', toggleDrawer);
+            });
+
+            // 3. Navbar Sticky Behavior on Scroll
+            const headerEl = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    headerEl.classList.add('scrolled');
+                } else {
+                    headerEl.classList.remove('scrolled');
+                }
+            });
+
+            // Register GSAP plugins
+            gsap.registerPlugin(ScrollTrigger);
+
+            // 4. Hero Animation Timings
+            function triggerHeroAnimations() {
+                const heroTimeline = gsap.timeline();
+
+                heroTimeline.fromTo('.status-badge', 
+                    { opacity: 0, y: 20 },
+                    { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }
+                );
+
+                // Word-by-word reveal stagger for Title text spans
+                heroTimeline.fromTo('.hero-title > span, .hero-profile-inline', 
+                    { opacity: 0, y: 30 },
+                    { opacity: 1, y: 0, stagger: 0.08, duration: 0.8, ease: 'power3.out' },
+                    '-=0.4'
+                );
+
+                heroTimeline.fromTo('.hero-subtitle', 
+                    { opacity: 0, y: 20 },
+                    { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' },
+                    '-=0.4'
+                );
+
+                heroTimeline.fromTo('.hero-actions .btn', 
+                    { opacity: 0, y: 15 },
+                    { opacity: 1, y: 0, stagger: 0.1, duration: 0.5, ease: 'power2.out' },
+                    '-=0.4'
+                );
+
+                heroTimeline.fromTo('.hero-small-info', 
+                    { opacity: 0, y: 10 },
+                    { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' },
+                    '-=0.3'
+                );
+
+                // Background Sparkles & Glow Entrance
+                heroTimeline.fromTo('.dotted-grid, .glow-circle, .sparkle',
+                    { opacity: 0, scale: 0.8 },
+                    { opacity: (i, el) => el.classList.contains('dotted-grid') ? 0.08 : 1, scale: 1, duration: 0.8, ease: 'power2.out' },
+                    '-=0.5'
+                );
+            }
+
+            // 5. Sparkles background micro-floating animations
+            gsap.to('.sparkle-1', { y: -15, x: 8, duration: 3.5, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+            gsap.to('.sparkle-2', { y: 12, x: -10, duration: 4.2, repeat: -1, yoyo: true, ease: 'sine.inOut', delay: 0.5 });
+            gsap.to('.sparkle-3', { y: -10, x: -12, duration: 4.8, repeat: -1, yoyo: true, ease: 'sine.inOut', delay: 1 });
+
+            // 6. Scroll Trigger Animations (Card fade up)
+            const revealElements = gsap.utils.toArray('.reveal-up');
+            revealElements.forEach((el) => {
+                gsap.fromTo(el, 
+                    { opacity: 0, y: 40 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.8,
+                        ease: 'power2.out',
+                        scrollTrigger: {
+                            trigger: el,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // 7. Skill Progress Bars Animation Trigger
+            const progressFills = gsap.utils.toArray('.progress-fill');
+            progressFills.forEach((fill) => {
+                const percent = fill.getAttribute('data-percent');
+                gsap.fromTo(fill,
+                    { width: '0%' },
+                    {
+                        width: percent + '%',
+                        duration: 1.5,
+                        ease: 'power3.out',
+                        scrollTrigger: {
+                            trigger: fill,
+                            start: 'top 92%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // 8. Soft glowing parallax-like mouse move interaction in Hero (Sparkle alignment)
+            const heroSec = document.getElementById('home');
+            heroSec.addEventListener('mousemove', (e) => {
+                const xVal = (e.clientX - window.innerWidth / 2) * 0.015;
+                const yVal = (e.clientY - window.innerHeight / 2) * 0.015;
+                
+                gsap.to('.sparkle-1, .sparkle-3', { x: xVal * 1.5, y: yVal * 1.5, duration: 0.6, ease: 'power1.out' });
+                gsap.to('.sparkle-2', { x: -xVal * 1.2, y: -yVal * 1.2, duration: 0.6, ease: 'power1.out' });
+            });
+
+        });
+    </script>
 </body>
 </html>
